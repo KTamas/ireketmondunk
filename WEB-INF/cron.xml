@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cronentries>
+    <cron>
+        <url>/update</url>
+        <description>Ireket mondunk delben</description>
+        <schedule>every day 12:00</schedule>
+        <timezone>Europe/Budapest</timezone>
+    </cron>
+    <cron>
+        <url>/update</url>
+        <description>Ireket mondunk este</description>
+        <schedule>every day 18:30</schedule>
+        <timezone>Europe/Budapest</timezone>
+    </cron>
+</cronentries>
