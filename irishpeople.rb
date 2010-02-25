@@ -8,6 +8,12 @@ get '/' do
   erb :index
 end
 
+get '/update' do
+  @irek = YAML::load(File.open('WEB-INF/irek.yaml'))
+  client = Twitter::Client.new(:login => 'ireketmondunk', :password => '')
+  status = client.status(:post, @irek[rand(@irek.size)])
+end
+
 __END__
 
 @@ index
