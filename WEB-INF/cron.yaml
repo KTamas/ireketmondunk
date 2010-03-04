@@ -1,0 +1,11 @@
+cron:
+ - descripton: deli irek
+   url: /update
+   schedule: every day 12:00
+   timezone: Europe/Budapest
+
+cron:
+ - descripton: esti irek
+   url: /update
+   schedule: every day 18:30
+   timezone: Europe/Budapest
