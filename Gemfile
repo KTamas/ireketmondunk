@@ -5,5 +5,5 @@ bundle_path ".gems/bundler_gems"
 
 # List gems to bundle here:
 gem "appengine-rack"
-gem "twitter4r"
+gem "appengine-apis"
 gem "sinatra"
