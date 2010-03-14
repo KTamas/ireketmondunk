@@ -4,8 +4,9 @@ require 'yaml'
 
 
 get '/' do
-  @irek = YAML::load(File.open('WEB-INF/irek.yaml'))
-  erb :index
+# @irek = YAML::load(File.open('WEB-INF/irek.yaml'))
+# erb :index
+  redirect 'http://twitter.com/ireketmondunk'
 end
 
 get '/update' do
@@ -21,6 +22,10 @@ get '/update' do
   "yay"
 end
 
+get '/ping' do
+  "pong"
+end
+
 __END__
 
 @@ index
@@ -28,9 +33,10 @@ __END__
 <head>
 <title>Ireket mondunk!</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="Refresh"
 </head>
 <body>
-<h1>latest irish person:</h1>
+<h1>redirecting to twitter...</h1>
 <p></p>
 </body>
 </html>

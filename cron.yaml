@@ -1,11 +1,12 @@
 cron:
- - descripton: deli irek
+ - description: deli irek
    url: /update
    schedule: every day 12:00
    timezone: Europe/Budapest
-
-cron:
- - descripton: esti irek
+ - description: esti irek
    url: /update
    schedule: every day 18:30
    timezone: Europe/Budapest
+ - description: keepalive
+   url: /ping
+   schedule: every 1 minutes
